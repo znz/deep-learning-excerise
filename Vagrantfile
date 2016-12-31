@@ -59,7 +59,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ]
   # memory setting 1024MB
   config.vm.provider "virtualbox" do |vm|
-    vm.memory = 1024
+    vm.memory = 6024
     vm.cpus = 4 
   end
   #Guest to Host

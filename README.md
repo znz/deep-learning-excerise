@@ -30,6 +30,12 @@ ansible-playbook -i provisioning/hosts provisioning/site.yml
 ### Usage
 #
 
+You access the vagrant enviroment
+
+```
+vagrant ssh
+```
+
 You run the docker enviroments
 
 ```

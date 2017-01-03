@@ -1,12 +1,13 @@
-ipython notebook for docker 
+# Deep learning using by the iython notebook and Docker
 ====
 
 Deep learning using by the iython notebook
 
 ## Description
 
-If you see the detail about it, you see the below<br>
+I provide the enviroment for deep learning from scratch by the docker and vagrant
 
+https://github.com/oreilly-japan/deep-learning-from-scratch
 
 #
 ### Install
@@ -15,16 +16,48 @@ Vagrant
 
 https://www.vagrantup.com/
 
+```
+vagrant up
+```
+
+Docker
+
+```
+ansible-playbook -i provisioning/hosts provisioning/site.yml
+```
+
 #
 ### Usage
 #
 
+You run the docker enviroments
+
+```
+docker run -p 8888:8888 -it {deep learning docker image id or docker image name} bash
+```
+
+You access docker enviroments, You execute the bellow command
+
+```
+ipython notebook --no-browser --port 8888 --ip=*
+```
+
+You access the ipython notebook (you type the vagrant ip address)
+
+```
+http://192.168.33.25:8888
+```
 
 #
 ### Code Directory Structure
 #
+
 ```
+- docker
+- provisioning
+Vagrantfile
 ```
+
 #
 ### Licence
 #
@@ -59,3 +92,4 @@ THE SOFTWARE.
 #
 >[Docker](https://www.docker.com/)<br>
 >[docker-project-template](https://github.com/ahawkins/docker-project-template)
+>[deep-learning-from-scratch](https://github.com/oreilly-japan/deep-learning-from-scratch)

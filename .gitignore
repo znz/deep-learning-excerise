@@ -95,3 +95,6 @@ Data/
 Data/*
 disk.vdi
 *.pkl
+
+# Ansible
+*.retry

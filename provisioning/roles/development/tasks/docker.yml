@@ -16,7 +16,7 @@
   sudo: yes
   tags: docker
 
-- name: make lsit
+- name: make list
   shell: touch /etc/apt/sources.list.d/docker.list && echo deb https://apt.dockerproject.org/repo ubuntu-trusty main >> /etc/apt/sources.list.d/docker.list
   sudo: yes
   tags: docker
